@@ -5,8 +5,7 @@ services:
   # App Service
   app:
     # Configuration for building the docker image for the service
-    #image: localhost:5000/golang:1.12-alpine
-    image: callicoder/swarm-demo-app:1.0.0
+    image: localhost:5000/golang:1.12-alpine
     ports:
       - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
     deploy:
