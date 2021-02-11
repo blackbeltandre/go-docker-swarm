@@ -5,7 +5,7 @@ services:
   # App Service
   app:
     # Configuration for building the docker image for the service
-    image: localhost:5000/golang:1.12-alpine
+    image: singledeveloper/golang:latest
     ports:
       - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
     deploy:
@@ -25,7 +25,7 @@ services:
 
   # Redis Service   
   redis:
-    image: localhost:5000/redis:alpine
+    image: singledeveloper/redis:latest
     ports:
       - "6379:6379"
     networks:
