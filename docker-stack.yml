@@ -8,7 +8,7 @@ services:
     #image: callicoder/swarm-demo-app:1.0.0
     image: singledeveloper/golang:latest
     ports:
-      - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
+      - "8087:8087" # Forward the exposed port 8087 on the container to port 8087 on the host machine
     deploy:
       replicas: 3
       resources:
